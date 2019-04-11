@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- 브라우저의 탭에 보여지는 텍스트 이고 북마크의 기본 젝목이 되기도 합니다. -->
+<title>이미지 맵</title>
+</head>
+<body>
+	<img src="../images/iu.jpg" width="300" height="300" usemap="#usemap" />
+
+	<map name="usemap">
+		<!-- alt는 대체 텍스트라고 부르는데 IE에서는 툴팁으로 표시되고, 나머지 브라우저에서는 콘텐츠가 출력이 안될 때 보여지는 대체 텍스트 -->
+		<area shape="rect" coords="0,0,150,300" href="https://www.google.com"
+			target="_blank">
+		<area shape="rect" coords="150,0,300,300" href="https://www.naver.com"
+			alt="네이버">
+	</map>
+	<!-- 최근의 HTML 에서는 디자인에 관련된 부분은 CSS에서 작성하는 것을 권장
+	색상 설정 들을 HTML 태그 내에서 설정하면 경고 표시 -->
+	<table border="2" bordercolor="blue" align="center" cellpadding="10"
+		summary="연락처입니다.">
+		<caption>표의 제목</caption>
+
+		<!-- 컬럼의 배경색 설정 -->
+		<col style="background: yellow">
+		<col style="background: #ffffcc">
+
+
+		<thead>
+			<tr>
+				<td colspan="2">
+					<h3>연락처</h3>
+				</td>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr bgcolor="red" height="50">
+				<th width="150">이름</th>
+				<th>연락처</th>
+			</tr>
+			<tr align="center">
+				<td background="../images/iu.jpg">유관순</td>
+				<td>01011112222</td>
+			</tr>
+
+			<tr>
+				<td>안중근</td>
+				<td>01033334444</td>
+			</tr>
+		</tbody>
+
+
+
+	</table>
+
+
+
+</body>
+</html>
